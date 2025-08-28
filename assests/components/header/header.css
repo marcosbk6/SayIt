@@ -1,0 +1,61 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-main);
+    width: 95%;
+    height: 80px;
+    border-radius: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.div-logo{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    margin-left: 20px;
+}
+
+#logo {
+    width: 90px;
+    height: 90px;
+}
+
+#links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    gap: 120px;
+    
+}
+
+div a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+    padding: 20px;
+    height: 50px;
+    font-size: 30px;
+    border: none;
+    color: rgba(0, 0, 0, 0.534);
+    background-color: transparent;
+    text-decoration: none;
+    border-radius: 20px;
+    
+}
+
+div a:hover {
+    color: #000;
+    cursor: pointer;
+    font-weight: 400;
+}
+

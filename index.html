@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assests/css/index.css">
+    <link rel="stylesheet" href="./assests/components/header/header.css">
+    <link rel="stylesheet" href="./assests/global/global.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+</head>
+<body>
+
+    <div id="header"></div>
+
+    <div class="welcome">
+        <h1>Bem-vindo ao <span id="texto-digitado"></span></h1>
+    </div>
+    <main>
+        <div class="frase-container">
+            <p class="frase">Aprenda inglês de forma divertida e interativa.</p>
+            <div class="principal">
+                <h2>Escolha sua forma de aprendizado</h2>
+                <div class="opcoes">
+                    <div class="cards">
+                        <img src="/assests/image/imagem-pronuncia.png" width="100px" height="100px"/>
+                        <h3>Pronúncia</h3>
+                        <p>Treine e aperfeiçoe sua pronúncia em inglês.</p>
+                    </div>
+                    <div class="cards">
+                        <img src="/assests/image/traduzir.png" width="100px" height="100px"/>
+                        <h3>Tradução</h3>
+                        <p>Acerte a tradução e avance no seu aprendizado.</p>
+                    </div>
+                    <div class="cards">
+                        <img src="/assests/image/pergunta-da-mensagem.png" width="100px" height="100px"/>  
+                        <h3>Qual é o nome?</h3>
+                        <p>Será que você sabe o nome? Teste seu vocabulário.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <div id="particles-js"></div>
+
+    <script>
+        fetch("./assests/components/header/header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+    </script>
+    
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 80
+                },
+                "size": {
+                    "value": 3,
+                    "random" : true
+                },
+                "move": {
+                    "speed": 2
+                },
+                "line_linked": {
+                    "enable": true
+                },
+                "shape":{
+                    "type": "star"
+                }
+            }
+        });
+    </script>
+
+    <script src="./assests/js/index.js"></script>
+
+    <script>
+        gsap.to(".frase", {
+        duration: 2,
+        y: -20,          // sobe 20px
+        ease: "power1.inOut",
+        yoyo: true,      // volta pro estado inicial
+        repeat: -1       // loop infinito
+});
+    </script>
+</body>
+</html>
