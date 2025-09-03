@@ -14,7 +14,7 @@
 </head>
 <body>
 
-    <div id="header"></div>
+    <header id="header"></header>
 
     <div class="welcome">
         <h1>Bem-vindo ao <span id="texto-digitado"></span></h1>
@@ -22,26 +22,32 @@
     <main>
         <div class="frase-container">
             <p class="frase">Aprenda inglês de forma divertida e interativa.</p>
-            <div class="principal">
+            <article class="principal">
                 <h2>Escolha sua forma de aprendizado</h2>
                 <div class="opcoes">
                     <div class="cards">
-                        <img src="/assests/image/imagem-pronuncia.png" width="100px" height="100px"/>
+                        <div class="icone-card">
+                            <img src="/assests/image/message-question-black.png"/>
+                        </div>
                         <h3>Pronúncia</h3>
                         <p>Treine e aperfeiçoe sua pronúncia em inglês.</p>
                     </div>
                     <div class="cards">
-                        <img src="/assests/image/traduzir.png" width="100px" height="100px"/>
+                        <div class="icone-card">
+                            <img src="/assests/image/user-language-black.png"/>
+                        </div>
                         <h3>Tradução</h3>
                         <p>Acerte a tradução e avance no seu aprendizado.</p>
                     </div>
                     <div class="cards">
-                        <img src="/assests/image/pergunta-da-mensagem.png" width="100px" height="100px"/>  
+                        <div class="icone-card">
+                            <img src="/assests/image/translate-black.png"/>  
+                        </div>
                         <h3>Qual é o nome?</h3>
                         <p>Será que você sabe o nome? Teste seu vocabulário.</p>
                     </div>
                 </div>
-            </div>
+            </article>
         </div>
 
     </main>
@@ -70,10 +76,14 @@
                     "speed": 2
                 },
                 "line_linked": {
-                    "enable": true
+                    "enable": true,
+                    "color": "#2e7ebc"
                 },
                 "shape":{
                     "type": "star"
+                },
+                "color": {
+                    "value": "#2e7ebc"
                 }
             }
         });
