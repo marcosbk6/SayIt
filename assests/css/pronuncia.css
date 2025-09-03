@@ -1,0 +1,22 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: red;
+}
+
+.titulo {
+  background: var(--text-gradient);
+  font-size: 50px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.frase {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+

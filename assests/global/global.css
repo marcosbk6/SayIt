@@ -11,7 +11,13 @@ a {
 :root {
     --background-gradient: radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgba(148, 187, 233, 1) 100%);
     --background-main: rgba(255, 255, 255, 0.616);
+    --text-gradient: linear-gradient(274deg, rgb(230, 46, 46) 0%, rgba(46,126,188,1) 100%);
     --red: #dc3a37;
     --blue: #2e7ebc;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 

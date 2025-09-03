@@ -26,3 +26,16 @@ document.querySelectorAll('.cards').forEach((card, idx) => {
     img.src = imagensOriginais[idx];
   });
 });
+
+
+document.querySelectorAll('.cards').forEach((card, idx) => {
+  const urls = [
+    "./pages/pronuncia.html",
+    "traducao.html",
+    "sabeNome.html"
+  ];
+
+  card.addEventListener('click', () => {
+    window.location.href = urls[idx];
+  });
+})

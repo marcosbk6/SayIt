@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SayIt!</title>
+    <link rel="icon" type="image/png" href="./assests/image/logo.png"/>
     <link rel="stylesheet" href="./assests/css/index.css">
     <link rel="stylesheet" href="./assests/components/header/header.css">
     <link rel="stylesheet" href="./assests/global/global.css">
@@ -16,41 +17,49 @@
 
     <header id="header"></header>
 
-    <div class="welcome">
+    <section class="welcome">
         <h1>Bem-vindo ao <span id="texto-digitado"></span></h1>
-    </div>
+    </section>
     <main>
-        <div class="frase-container">
+        <section class="frase-container">
             <p class="frase">Aprenda inglês de forma divertida e interativa.</p>
             <article class="principal">
                 <h2>Escolha sua forma de aprendizado</h2>
-                <div class="opcoes">
-                    <div class="cards">
+
+                <ul class="opcoes">
+
+                    <li class="cards">
                         <div class="icone-card">
-                            <img src="/assests/image/message-question-black.png"/>
+                            <img src="/assests/image/message-question-black.png" alt="ícone de pronuncía"/>
                         </div>
                         <h3>Pronúncia</h3>
                         <p>Treine e aperfeiçoe sua pronúncia em inglês.</p>
-                    </div>
-                    <div class="cards">
+                    </li>
+
+                    <li class="cards">
                         <div class="icone-card">
-                            <img src="/assests/image/user-language-black.png"/>
+                            <img src="/assests/image/user-language-black.png" alt="ícone de tradução"/>
                         </div>
                         <h3>Tradução</h3>
                         <p>Acerte a tradução e avance no seu aprendizado.</p>
-                    </div>
-                    <div class="cards">
+                    </li>
+
+                    <li class="cards">
                         <div class="icone-card">
-                            <img src="/assests/image/translate-black.png"/>  
+                            <img src="/assests/image/translate-black.png" alt="ícone de vocabulário"/>  
                         </div>
                         <h3>Qual é o nome?</h3>
                         <p>Será que você sabe o nome? Teste seu vocabulário.</p>
-                    </div>
-                </div>
-            </article>
-        </div>
+                    </li>
 
+                </ul>
+            </article>
+        </section>
+
+        
+        
     </main>
+
 
     <div id="particles-js"></div>
 

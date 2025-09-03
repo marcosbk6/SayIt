@@ -16,11 +16,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
   gap: 10px;
-  background: url("../image/wave-haikei.svg");
-  background-size: cover;
 }
 
 .welcome {
@@ -50,8 +46,9 @@ main {
 }
 
 div h1 {
-  width: 334px;
+  width: 525px;
   color: rgb(0, 0, 0);
+  font-size: 50px;
 }
 
 .say {
@@ -76,8 +73,8 @@ div h1 {
   flex-direction: column;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.2);
-  width: 150%;
-  height: 500px;
+  width: 100%;
+  height: 530px;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
 
@@ -88,6 +85,8 @@ div h1 {
 }
 
 .principal h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: xx-large;
   color: #60a5fa;
 }
 
@@ -166,17 +165,17 @@ div h1 {
 }
 
 .cards h3 {
-  font-weight: 600;
-  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 27px;
 }
 
 .cards p {
   width: 85%;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 18px;
 }
 
 .cards:hover .extra {
   opacity: 1;
 }
-

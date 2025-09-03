@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../assests/image/logo.png"/>
+    <title>SayIt! - Pronúncia</title>
+    <link rel="stylesheet" href="../assests/components/header/header.css">
+    <link rel="stylesheet" href="../assests/global/global.css">
+    <link rel="stylesheet" href="../assests/css/pronuncia.css">
+
+</head>
+<body>
+
+    <header id="header"></header>
+
+    <main>
+        <h1 class="titulo">Pronúncia</h1>
+        <p class="frase">Aqui você pode treinar e aperfeiçoar sua pronúncia em inglês.</p>
+    </main>
+
+    <script>
+    fetch('../assests/components/header/header.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('header').innerHTML = data;
+    });
+</script>
+</body>
+</html>
