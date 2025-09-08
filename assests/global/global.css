@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
-    font-family:"Open Sans", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 a {
@@ -10,10 +10,17 @@ a {
 
 :root {
     --background-gradient: radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgba(148, 187, 233, 1) 100%);
-    --background-main: rgba(255, 255, 255, 0.616);
+    --background-main: linear-gradient(135deg, #f0f9ff 0%, #ffffff 50%, #eef2ff 100%);;
     --text-gradient: linear-gradient(274deg, rgb(230, 46, 46) 0%, rgba(46,126,188,1) 100%);
     --red: #dc3a37;
     --blue: #2e7ebc;
+    --light-blue: #B3D4FC;
+
+    --text-color: #333333;
+    --gradient-blue: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
+    --gradient-roxo: linear-gradient(90deg, #6366f1 0%, #4f46e5 100%);
+    --gradient-rosa: linear-gradient(90deg, #a855f7 0%, #9333ea 100%);
+    --gradient-main: linear-gradient(90deg, #2563eb 0%, #4f46e5 50%, #9333ea 100%);
 }
 
 body {

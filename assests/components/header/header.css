@@ -1,10 +1,7 @@
+/* Estilos para o cabeçalho */
 header {
-  height: 140px; /* ajuste conforme necessário */
+  height: 100px; /* ajuste conforme necessário */
   width: 100vw;
-  background: url("../../image/wave-haikei.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
 }
 
 nav {
@@ -18,34 +15,52 @@ nav {
     align-items: center;
     width: 40%;
     height: 100%;
-    margin-left: 20px;
+    margin-left: 150px;
+}
+
+.bg-logo {
+    background: var(--gradient-blue); /* azul 600 → indigo 600 */
+    border-radius: 20%;
+    margin: 10px;
+    display: flex;
 }
 
 #logo {
-    width: 90px;
-    height: 90px;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+#marca {
+    font-size: 25px;
+    background: var(--gradient-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    
 }
 
 #links {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 400px;
     width: 60%;
-    height: 100%;
-    gap: 120px;
-    
+    height: 100%;    
 }
 
 #links a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
+    width: 80px;
     padding: 20px;
     height: 50px;
-    font-size: 30px;
+    font-size: 20px;
+    font-weight: 600;
     border: none;
-    color: rgba(255, 255, 255, 0.685);
+    color: rgba(0, 0, 0, 0.685);
     background-color: transparent;
     text-decoration: none;
     border-radius: 20px;
@@ -53,8 +68,8 @@ nav {
 }
 
 #links a:hover {
-    color: #ffffff;
+    color: var(--blue);
     cursor: pointer;
-    font-weight: 400;
+    font-weight: 700;
 }
 

@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./assests/css/index.css">
     <link rel="stylesheet" href="./assests/components/header/header.css">
     <link rel="stylesheet" href="./assests/global/global.css">
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
@@ -18,50 +17,56 @@
     <header id="header"></header>
 
     <section class="welcome">
-        <h1>Bem-vindo ao <span id="texto-digitado"></span></h1>
+        <h1>Bem-vindo ao <span class="destaque">Say It!</span></h1>
+        <p class="frase">Aprenda inglês de forma divertida e interativa.</p>
     </section>
+    
     <main>
-        <section class="frase-container">
-            <p class="frase">Aprenda inglês de forma divertida e interativa.</p>
-            <article class="principal">
-                <h2>Escolha sua forma de aprendizado</h2>
+        <section class="learning-options">
+            <h2>Escolha sua forma de aprendizado</h2>
+            <span> Diferentes metodos para acelerar seu aprendizado</span>
 
-                <ul class="opcoes">
+            <div class="principal">
 
-                    <li class="cards">
-                        <div class="icone-card">
-                            <img src="/assests/image/message-question-black.png" alt="ícone de pronuncía"/>
+                <ul class="cards-list">
+
+                    <li class="card">
+                        <div class="icone-card bg-azul">
+                            <img src="/assests/image/speaking.png" alt="ícone de pronuncía"/>
                         </div>
                         <h3>Pronúncia</h3>
                         <p>Treine e aperfeiçoe sua pronúncia em inglês.</p>
+                        <button class="btn-card bg-azul">Começar Agora</button>
                     </li>
 
-                    <li class="cards">
-                        <div class="icone-card">
-                            <img src="/assests/image/user-language-black.png" alt="ícone de tradução"/>
+                    <li class="card">
+                        <div class="icone-card bg-roxo">
+                            <img src="/assests/image/language-solid-full.svg" alt="ícone de tradução"/>
                         </div>
                         <h3>Tradução</h3>
                         <p>Acerte a tradução e avance no seu aprendizado.</p>
+                        <button class="btn-card bg-roxo">Começar Agora</button>
                     </li>
 
-                    <li class="cards">
-                        <div class="icone-card">
-                            <img src="/assests/image/translate-black.png" alt="ícone de vocabulário"/>  
+                    <li class="card">
+                        <div class="icone-card bg-rosa">
+                            <img src="/assests/image/message-question-white.png" alt="ícone de vocabulário"/>  
                         </div>
                         <h3>Qual é o nome?</h3>
                         <p>Será que você sabe o nome? Teste seu vocabulário.</p>
+                        <button class="btn-card bg-rosa">Começar Agora</button>
                     </li>
 
                 </ul>
-            </article>
+            </div>
         </section>
 
         
         
     </main>
 
-
-    <div id="particles-js"></div>
+    
+    <!-- <div id="particles-js"></div> -->
 
     <script>
         fetch("./assests/components/header/header.html")

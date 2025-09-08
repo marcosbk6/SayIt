@@ -23,7 +23,23 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  flex-direction: column;
+}
+
+section h1 {
+  width: 900px;
+  font-size: 85px;
+  font-weight: 800;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.frase {
+  font-weight: 400;
+  font-size: 35px;
+  color: var(--text-color);
+  opacity: 1;
+  user-select: none;
 }
 
 main {
@@ -34,63 +50,47 @@ main {
   width: 95%;
 }
 
-.frase-container {
+.learning-options {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   border-radius: 20px;
-  margin: 20px auto;
-  padding: 10px;
+
 }
 
-div h1 {
-  width: 525px;
-  color: rgb(0, 0, 0);
-  font-size: 50px;
+.learning-options h2 {
+  color: var(--text-color);
+  font-size: 45px;
+  font-weight: 700;
 }
 
-.say {
-  color: var(--blue);
-}
-
-.It {
-  color: var(--red);
-}
-
-.frase {
-  font-family: "Poppins", sans-serif;
+.learning-options span {
+  font-size: 25px;
   font-weight: 300;
-  font-size: 40px;
-  color: rgba(0, 0, 0, 0.815);
-  opacity: 1;
-  user-select: none;
+  padding: 0 0 40px 0;
+  color-interpolation-filters: var(--text-color);
 }
+
+.destaque {
+  background: var(--gradient-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 
 .principal{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.2);
   width: 100%;
-  height: 530px;
   border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-
-  /* From https://css.glass */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(1.5px);
-  -webkit-backdrop-filter: blur(1.5px);
 }
 
-.principal h2 {
-  font-family: "Poppins", sans-serif;
-  font-size: xx-large;
-  color: #60a5fa;
-}
 
-.opcoes{
+.cards-list{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -100,7 +100,7 @@ div h1 {
   color: white;
 }
 
-.cards {
+.card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -108,74 +108,106 @@ div h1 {
   width: 350px;
   height: 350px;
   color: black;
-  border: 1px solid var(--blue);
+
   border-radius: 20px;
   position: relative;
   
-  box-shadow: 0 0 0 rgba(0,0,0,0);
-
   transition: all 0.25s ease;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 
-.cards::after{
+.card::after{
   content: "";
   position: absolute;
-  bottom: 8px;
   width: 100%;
   height: 100%;
-  background: var(--blue);
-  border-radius: 20px;
   z-index: -1;
   opacity: 0;
   transition: all 0.3s ease;
 }
 
-.cards:hover {
-  background-color: rgba(50, 56, 63, 0.397) ;
+.card:hover {
   cursor: pointer;
   transition: 0.5s;
-  transform: translateY(-8px);
+  transform: translateY(-10px);
   border: none;
-  padding-bottom: 16px;
-  bottom: 16px;
-  color: white;
+
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-.cards:hover::after{
-  opacity: 1;
-  transition: all 0.5s ease;
-  bottom:16px;
-}
 
-.cards *{
+.card *{
   width: 90%;
   margin-left: 30px;
 }
 
+
 .icone-card {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
 }
 
+.card:hover .icone-card {
+  transform: scale(1.1);
+}
+
+.bg-rosa {
+  background: var(--gradient-rosa);
+}
+
+.bg-roxo {
+  background: var(--gradient-roxo);
+}
+
+.bg-azul {
+  background: var(--gradient-blue);
+}
+
+
 .icone-card img {
-  width: 50px;
-  height: 50px;
+  display: flex; 
+  justify-content: center;
+  width: 40px;
+  height: 40px;
   margin: 0;
+  margin-top: 10px;
   object-fit: contain;
 }
 
-.cards h3 {
+.card h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-size: 27px;
 }
 
-.cards p {
+.card p {
   width: 85%;
   font-weight: 300;
   font-size: 18px;
 }
 
-.cards:hover .extra {
-  opacity: 1;
+.btn-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 85%;
+  height: 15%;
+  border-radius: 20px;
+  margin-left:30px;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.btn-card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  filter: brightness(1.1);
 }
