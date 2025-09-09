@@ -1,27 +1,26 @@
 /* Estilos para o cabeçalho */
 header {
-  height: 100px; /* ajuste conforme necessário */
-  width: 100vw;
+    height: 100px; /* ajuste conforme necessário */
+    width: 100%;
 }
 
 nav {
     display: flex;
     align-items: center;
-    width: 100%;
+    justify-content: space-between;
+    padding: 0 50px;
 }
 
 .div-logo{
     display: flex;
     align-items: center;
-    width: 40%;
-    height: 100%;
-    margin-left: 150px;
+    gap: 10px;
 }
 
 .bg-logo {
-    background: var(--gradient-blue); /* azul 600 → indigo 600 */
+    background: var(--gradient-blue);
     border-radius: 20%;
-    margin: 10px;
+    padding: 5px;
     display: flex;
 }
 
@@ -43,11 +42,7 @@ nav {
 
 #links {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 400px;
-    width: 60%;
-    height: 100%;    
+    gap: 30px; 
 }
 
 #links a {
@@ -73,3 +68,24 @@ nav {
     font-weight: 700;
 }
 
+@media (max-width: 1440px) {
+    header {
+        max-width: 1440px;
+    }
+    nav {
+        max-width: 1440px;
+    }
+    
+}
+
+@media (max-width: 1024px) {
+    header {
+        max-width: 1024px;
+    }
+    .div-logo {
+        margin-left: 50px;
+    }
+    #links {
+        margin-left: 100px;
+    }
+}
