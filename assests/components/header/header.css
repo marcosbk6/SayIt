@@ -82,10 +82,7 @@ nav {
     header {
         max-width: 1024px;
     }
-    .div-logo {
-        margin-left: 50px;
-    }
-    #links {
-        margin-left: 100px;
+    nav {
+        max-width: 1024px;
     }
 }
